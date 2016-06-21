@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chronometer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script type="text/javascript" src="js/index.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="panel panel-info">
+            <div class="panel-heading" >
+                <div align="center" id="cronometro"><h3>00:00:00:00</h3></div>
+            </div>
+                </div>
+            <div class="row" style="margin-bottom: 20px">
+                <div class="col-sm-6" id="iniciar">
+                    <button style="width: 100%; margin-bottom: 5px" type="button" class="btn btn-success" onclick="iniciarContador(); cambiarDetener()">Iniciar</button>                   
+                </div>
+
+                <div class="col-sm-6" id="vuelta">
+                    <button style="width: 100%" type="button" class="btn btn-default" onclick="vuelta()">Vuelta</button>                      
+                </div>                       
+            </div>              
+            <div class="list-group" id="vueltas">
+            </div>         
+        </div>    
+    </body>
+</html>
